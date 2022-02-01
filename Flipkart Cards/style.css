@@ -112,6 +112,26 @@
 }
 
 /* Footwear CSS */
+.clock{
+    display: flex;
+    margin-left: 18px;
+    align-items: center;
+
+}
+.clock span{
+    margin-left: 10px;
+}
+.footwear-header-clock{
+    display: flex;
+}
+.deals{
+    display: flex;
+}
+.ad img{
+    padding: 8px;
+    height: 355px;
+    width: 100%;
+}
 .footwear{
     width: 100%;
     background-color: aliceblue;
