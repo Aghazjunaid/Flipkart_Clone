@@ -167,7 +167,8 @@
 }
 .footwear-Card-design img{
     height: 150px;
-    object-fit: cover;
+    width: 150px;
+    object-fit: contain;
 }
 
 .title{
