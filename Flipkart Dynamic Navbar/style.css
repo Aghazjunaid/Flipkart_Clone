@@ -60,7 +60,7 @@
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    top: 38px;
+    /* top: 38px; */
   }
   
   .dropdown-content a {
@@ -92,15 +92,18 @@
     font-weight: bold;
 }
 .cart{
-    margin: 0 30px;
+    margin: 0 25px;
     color: white;
     font-size: 18px;
     font-weight: bold;
+    width: 60px;
+
 }
 
 .navData{
+    width: 100%;
     background-color: white;
-    height: 60px;
+    height: 94px;
 }
 .navData-container{
     width: 80%;
@@ -117,3 +120,109 @@
     font-size: 13px;
     font-weight: bold;
 }
+
+/* Carousel CSS */
+.carousel{
+    padding: 8px;
+    background-color: aliceblue;
+    position: relative;
+}
+.carousel img{
+    width: 100%;
+    cursor: pointer;
+}
+.carousel-left-symbol{
+    position: absolute;
+    width: 50px;
+    height: 90px;
+    background-color: white;
+    top: 90px;
+    border-radius: 0 5px 5px 0;
+    text-align: center;
+    font-size: 65px;
+    cursor: default;
+}
+
+.carousel-right-symbol{
+    position: absolute;
+    width: 50px;
+    height: 90px;
+    background-color: white;
+    top: 90px;
+    right: 7px;
+    cursor: default;
+    text-align: center;
+    font-size: 65px;
+    border-radius: 5px 0 0 5px;
+}
+
+@media (min-width:401px) and (max-width:850px){
+    .container{
+        width: 100%;
+        margin: 0;
+    }
+
+    .navData-container{
+        width: 100%;
+        margin: 0;
+        height: 50px;
+    }
+    .navData-container div img{
+        height: 50px;
+    }
+    .navData-container div div{
+        font-size: 10px;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 400px){
+    .navData-container{
+        max-width: 100%;
+        margin: 0;
+        height: 50px;
+    }
+    .navData-container div img{
+        height: 50px;
+    }
+    .navData-container div div{
+        font-size: 10px;
+        font-weight: bold;
+    }
+
+    .carousel{
+        width: 100%;
+        background-color: aliceblue;
+        position: relative;
+    }
+    .carousel img{
+        width: 100%;
+        object-fit: cover;
+        cursor: pointer;
+    }
+    .carousel-left-symbol{
+        position: absolute;
+        width: 21px;
+        height: 29px;
+        background-color: white;
+        top: 36px;
+        border-radius: 0 5px 5px 0;
+        text-align: center;
+        font-size: 24px;
+        cursor: default;
+    }
+    
+    .carousel-right-symbol{
+        position: absolute;
+        width: 21px;
+        height: 29px;
+        background-color: white;
+        top: 36px;
+        right: 0;
+        border-radius: 0 5px 5px 0;
+        text-align: center;
+        font-size: 24px;
+        cursor: default;
+    }
+}
+
