@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Roboto,Arial,sans-serif;
+    text-decoration: none;
 }
 .navbar{
     width: 100%;
@@ -68,6 +69,13 @@
     margin: 10px auto;
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
+}
+.navData-container div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .navData-container div img{
     height: 75px;
@@ -76,7 +84,9 @@
     font-size: 13px;
     font-weight: bold;
 }
-
+.navData-container div:hover{
+    color: #2874f0;
+}
 /* Carousel CSS */
 .carousel{
     padding: 8px;
@@ -198,6 +208,88 @@
     font-size: 13px;
     padding-top: 7px;
 }
+
+.details{
+    width: 100%;
+    padding: 25px;
+    text-align: left;
+    color: #878787;
+}
+.details-body{
+    margin: 18px 0;
+
+}
+.details-title{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.details-paragraph{
+    font-size: 12px;
+}
+footer{
+    background-color: #172337;
+}
+.upper-footer{
+    padding: 35px 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.upper-footer-section{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.upper-footer-section div{
+    color: #878787;
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 9px;
+}
+.upper-footer-section a{
+    line-height: 2;
+    font-size: 13px;
+    font-weight: 500;
+    color: #fff;
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+}
+.upper-footer-section a:hover{
+    text-decoration: underline;
+    color: #fff;
+}
+.upper-footer-section p{
+    font-size: 12px;
+    color: #fff;
+    line-height: 1.5;
+}
+.telephone{
+    display: flex;
+    align-items: center;
+}
+.telephone a{
+    color: #2874f0;
+    margin-left: 5px;
+}
+.lower-footer{
+    border-top: 1px solid #454d5e;
+    padding: 25px 0;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.lower-footer div{
+    margin-bottom: 10px;
+}
+.lower-footer div a{
+    color: #fff;
+    margin-left: 8px;
+}
+
 
 @media (max-width: 390px){
     .navData-container{

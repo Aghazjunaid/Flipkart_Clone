@@ -19,6 +19,12 @@
     padding: 10px;
     word-spacing: 0;
 }
+.mobile-icons-left i{
+    display: none;
+}
+.mobile-icons-right{
+    display: none;
+}
 .searchbar{
     position: relative;
 }
@@ -103,13 +109,14 @@
 .navData{
     width: 100%;
     background-color: white;
-    height: 94px;
+    margin-bottom: 10px;
 }
 .navData-container{
     width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 10px;
     text-align: center;
 }
@@ -134,7 +141,7 @@
 .carousel-left-symbol{
     position: absolute;
     width: 50px;
-    height: 90px;
+    height: 75px;
     background-color: white;
     top: 90px;
     border-radius: 0 5px 5px 0;
@@ -146,7 +153,7 @@
 .carousel-right-symbol{
     position: absolute;
     width: 50px;
-    height: 90px;
+    height: 75px;
     background-color: white;
     top: 90px;
     right: 7px;
@@ -156,73 +163,114 @@
     border-radius: 5px 0 0 5px;
 }
 
-@media (min-width:401px) and (max-width:850px){
+@media (max-width:850px){
+    .btns{
+        display: none;
+    }
+    .navbar{
+        height: 120px;
+    }
     .container{
         width: 100%;
-        margin: 0;
+        flex-direction: column;
     }
-
+    .mobile-icons{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .mobile-icons-left i{
+        display: block;
+        color: white;
+        font-size: 20px;
+        margin-right: 5px;
+    }
+    .logo > img{
+        height: 17px !important;
+    }
+    .mobile-icons-right{
+        display: block;
+        color: white;
+        display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 20px;
+    }
+    .mobile-icons-right img{
+        width: 15px;
+    }
+    .mobile-icons-right span{
+        color: #eaeaea;
+        margin-right: 15px;
+        font-size: 16px;
+    }
+    .mobile-icons-left{
+        display: flex;
+        align-items: center;
+        margin-left: 15px;
+    }
+    .searchbar{
+        width: 100%;
+        padding: 0 10px;
+    }
+    .searchbar input{
+        width: 100%;
+        padding: 0 5px 0 45px;
+        border-radius: 3px;
+    }
+    .searchbar i{
+        left: 25px;
+        font-size: 18px;
+        color: #b4a7a7;
+    }
     .navData-container{
         width: 100%;
-        margin: 0;
-        height: 50px;
     }
-    .navData-container div img{
-        height: 50px;
+    
+    
+}
+
+
+@media (min-width:401px) and (max-width:850px){
+    .carousel img{
+        object-fit: cover;
     }
-    .navData-container div div{
-        font-size: 10px;
-        font-weight: bold;
+    .carousel-left-symbol{
+    width: 24px;
+    height: 37px;
+    top: 53px;
+    font-size: 34px;
+    }
+    
+    .carousel-right-symbol{
+        width: 24px;
+        height: 37px;
+        top: 53px;
+        right: 8px;
+        font-size: 34px;
     }
 }
 
 @media (max-width: 400px){
-    .navData-container{
-        max-width: 100%;
-        margin: 0;
-        height: 50px;
-    }
-    .navData-container div img{
-        height: 50px;
-    }
-    .navData-container div div{
-        font-size: 10px;
-        font-weight: bold;
-    }
-
-    .carousel{
-        width: 100%;
-        background-color: aliceblue;
-        position: relative;
-    }
     .carousel img{
-        width: 100%;
         object-fit: cover;
-        cursor: pointer;
     }
     .carousel-left-symbol{
-        position: absolute;
-        width: 21px;
-        height: 29px;
-        background-color: white;
-        top: 36px;
-        border-radius: 0 5px 5px 0;
-        text-align: center;
-        font-size: 24px;
-        cursor: default;
+        width: 19px;
+        height: 22px;
+        top: 28px;
+        font-size: 20px;
     }
     
     .carousel-right-symbol{
-        position: absolute;
-        width: 21px;
-        height: 29px;
-        background-color: white;
-        top: 36px;
-        right: 0;
-        border-radius: 0 5px 5px 0;
-        text-align: center;
-        font-size: 24px;
-        cursor: default;
+        width: 19px;
+        height: 22px;
+        top: 28px;
+        right: 8px;
+        font-size: 20px;
     }
+
+    
 }
 
