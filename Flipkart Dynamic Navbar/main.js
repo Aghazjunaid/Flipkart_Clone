@@ -15,9 +15,10 @@ const navList = document.getElementById("navList")
 function createNavList(data){
     let createdNavElement = document.createElement("div")
     // createdNavElement.className = "div1" //used to add class to created element
-    createdNavElement.innerHTML = `
-    <img class="item-image" src=${data.url} />
-    <div>${data.text}</div>
+    createdNavElement.innerHTML = `<a href="/top-offers.html">
+        <img class="item-image" src=${data.url} />
+        <div>${data.text}</div>
+        </a>
     `;
     return createdNavElement
 }

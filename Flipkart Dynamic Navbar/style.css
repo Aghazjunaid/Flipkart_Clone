@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Roboto,Arial,sans-serif;
+    text-decoration: none;
 }
 .navbar{
     width: 100%;
@@ -120,6 +121,13 @@
     margin-top: 10px;
     text-align: center;
 }
+.navData-container a{
+    text-decoration: none;
+    color: inherit;
+}
+.navData-container a:hover{
+    color: #2874f0;
+}
 .navData-container div img{
     height: 75px;
 }
@@ -131,7 +139,7 @@
 /* Carousel CSS */
 .carousel{
     padding: 8px;
-    background-color: aliceblue;
+    background-color: #f0f0f0;
     position: relative;
 }
 .carousel img{
@@ -162,6 +170,181 @@
     font-size: 65px;
     border-radius: 5px 0 0 5px;
 }
+
+/* Footwear CSS */
+.clock{
+    display: flex;
+    margin-left: 18px;
+    align-items: center;
+
+}
+.clock span{
+    margin-left: 10px;
+}
+.footwear-header-clock{
+    display: flex;
+}
+.deals{
+    display: flex;
+}
+.ad img{
+    padding: 8px;
+    height: 350px;
+    width: 100%;
+}
+.footwear{
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 8px;
+}
+.footwear-header{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+.footwear-header input{
+    background: #2874f0;
+    color: #fff;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+    border: none;
+    width: 90px;
+    height: 40px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.footwear-cards{
+    padding-top: 10px;
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+    background-color: white;
+}
+.footwear-Card-design{
+    text-align: center;
+    padding: 9px;
+}
+.footwear-Card-design img{
+    height: 150px;
+    width: 150px;
+    object-fit: contain;
+}
+
+.footwear-Card-design img:hover{
+    height: 150px;
+    width: 155px;
+    object-fit: contain;
+}
+
+.title{
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.price{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #388e3c;
+    padding-top: 8px;
+}
+.category{
+    opacity: .6;
+    font-size: 13px;
+    padding-top: 7px;
+}
+
+.details{
+    width: 100%;
+    padding: 25px;
+    text-align: left;
+    color: #878787;
+}
+.details-body{
+    margin: 18px 0;
+
+}
+.details-title{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.details-paragraph{
+    font-size: 12px;
+}
+footer{
+    background-color: #172337;
+}
+.upper-footer{
+    padding: 35px 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.upper-footer-section{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.upper-footer-section div{
+    color: #878787;
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 9px;
+}
+.upper-footer-section a{
+    line-height: 2;
+    font-size: 13px;
+    font-weight: 500;
+    color: #fff;
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+}
+.upper-footer-section a:hover{
+    text-decoration: underline;
+    color: #fff;
+}
+.upper-footer-section p{
+    font-size: 12px;
+    color: #fff;
+    line-height: 1.5;
+}
+.telephone{
+    display: flex;
+    align-items: center;
+}
+.telephone a{
+    color: #2874f0;
+    margin-left: 5px;
+}
+.lower-footer{
+    border-top: 1px solid #454d5e;
+    padding: 25px 0;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.lower-footer div{
+    margin-bottom: 10px;
+}
+.lower-footer div a{
+    color: #fff;
+    margin-left: 8px;
+}
+
+
+
+
+
+
+
 
 @media (max-width:850px){
     .btns{
