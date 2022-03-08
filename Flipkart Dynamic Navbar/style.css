@@ -231,11 +231,11 @@
     object-fit: contain;
 }
 
-.footwear-Card-design img:hover{
+/* .footwear-Card-design img:hover{
     height: 150px;
     width: 155px;
     object-fit: contain;
-}
+} */
 
 .title{
     font-size: 14px;
