@@ -199,3 +199,56 @@ for(let i=0; i<bigStealsOfTheWeekData.length; i++){
     let ele = createDealsOfTheDay(bigStealsOfTheWeekData[i])
     bidStealsOfWeekTag.appendChild(ele);
 }
+
+
+let topOffersData = [
+    {
+        url: "/assets/images/m-151tkr2811-selvia-original-imagyfmzv4yhgxxf.jpeg",
+        title: "Dresses, T-Shirts, Tops...",
+        price: "Upto 60% Off",
+        description: "Sassafras, Nike, Vero Moda"
+    },
+    {
+        url: "/assets/images/no-regular-arg-b39-yes-android-ios-honor-yes-original-imag3ru49v8bsqh7.jpeg",
+        title: "Honor Band 6",
+        price: "Flat 50% off",
+        description: "Just ₹2999"
+    },
+    {
+        url: "/assets/images/42-14381888-mast-harbour-original-imag88krppztwqhg.jpeg",
+        title: "Arrow, UCB, Levi's..",
+        price: "Up to 60%+Extra10%Off",
+        description: "Shirts, Trousers.."
+    },
+    {
+        url: "/assets/images/pluto-bajaj-original-imag8yqnfkzzbpkg.jpeg",
+        title: "Mixers, Induction Cooktops ...",
+        price: "Up to 55% Off",
+        description: "Preethi, Philips & more"
+    },
+    {
+        url: "/assets/images/400-hamilton-deodorant-body-spray-denver-men-original-imafgb9fsafampwz.jpeg",
+        title: "Deodorants",
+        price: "Min 30% Off",
+        description: "Grab Now!"
+    },
+    {
+        url: "/assets/images/200-gm-strawberry-powder-natural-spry-dried-1-bliss-of-earth-original-imag78yykwvyhfwh.jpeg",
+        title: "Instant Drink Mix",
+        price: "Min 20% Off",
+        description: "Grab Now!"
+    },
+    {
+        url: "/assets/images/med-blk-c-medellin-original-imaf22pgyd8w5krp.jpeg",
+        title: "Acoustic Guitars",
+        price: "Starting ₹2199",
+        description: "Medellin, Juarez & More"
+    },
+]
+
+let topOffersTag = document.getElementById("top-offers")
+
+for(let i=0; i<topOffersData.length; i++){
+    let ele = createDealsOfTheDay(topOffersData[i])
+    topOffersTag.appendChild(ele);
+}
